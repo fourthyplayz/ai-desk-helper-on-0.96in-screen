@@ -31,3 +31,12 @@ The project follows the **Ports and Adapters** pattern:
    const char* WIFI_SSID      = "YOUR_WIFI_SSID";
    const char* WIFI_PASS      = "YOUR_WIFI_PASSWORD";
    const char* GEMINI_API_KEY = "YOUR_API_KEY";
+
+Set your Serial Monitor to 115200 Baud.
+
+Upload and start chatting!
+
+⚠️ Important Notes
+SSL/TLS: Ensure your ApiGateway is configured to handle HTTPS, as Google's API requires a secure connection.
+
+Memory: Large responses from the LLM can exceed the ESP8266's heap memory. For production use, consider streaming the response
